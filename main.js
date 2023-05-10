@@ -30,7 +30,7 @@ function draw(){
     image(video, 0,0,480,380);
         if(status != ""){
             objectDetector.detect(video, gotResult);
-            for(i= 0;i<object.legth;i++){
+            for(i= 0;i<objects.legth;i++){
                 document.getElementById("status").innerHTML= "Status: Objetos detectados";
                 document.getElementById("numberofobjects").innerHTML="quantidade de objetos detectados: "+objects.legth;
                 fill("#FF0000");
