@@ -9,7 +9,7 @@ function setup(){
     video.hide();
 }
 function start(){
-    ojectDetector = ml5.objectDetector('cocssd',modelLoaded);
+    objectDetector = ml5.objectDetector('cocssd',modelLoaded);
     document.getElementById("status").innerHTML = "status: detectando objetos";
 }
 function modelLoaded(){
